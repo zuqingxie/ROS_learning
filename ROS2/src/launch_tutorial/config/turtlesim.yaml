@@ -1,0 +1,6 @@
+# /turtlesim2/sim: 
+/**:  #使用这个通配符,这样不同节点都能使用同一个YAML 文件了
+   ros__parameters:
+      background_b: 255
+      background_g: 86
+      background_r: 150

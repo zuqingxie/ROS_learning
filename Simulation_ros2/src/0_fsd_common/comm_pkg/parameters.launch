@@ -1,0 +1,9 @@
+<launch>
+  <!-- load parameters from a YAML file -->
+  <rosparam command = "load" file = "$(find d4_comm_pkg)/config/dd_controls.yaml" />
+  <rosparam command = "load" file = "$(find d4_comm_pkg)/config/dd_vehicle_D3.yaml" />
+  <rosparam command = "load" file = "$(find d4_comm_pkg)/config/dd_lidar_det.yaml" />
+  <rosparam command = "load" file = "$(find d4_comm_pkg)/config/dd_conefusion.yaml" />
+  <rosparam command = "load" file = "$(find d4_comm_pkg)/config/dd_track_info.yaml" />
+
+</launch>

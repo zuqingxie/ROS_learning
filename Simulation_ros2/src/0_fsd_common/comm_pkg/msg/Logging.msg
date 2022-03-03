@@ -1,0 +1,12 @@
+std_msgs/Header header
+float32 pos_x
+float32 pos_y
+float32 pos_theta
+comm_pkg/VehicleStateDT vehicle_state_dt
+std_msgs/Float64MultiArray sigma_car
+std_msgs/Float64MultiArray sigma_cones
+comm_pkg/VehicleState truth_position
+float32 calculation_time_update
+float32 calculation_time_prediction
+float32 calculation_time
+int32 calculation_time_exceeded

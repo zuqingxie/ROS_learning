@@ -1,0 +1,4 @@
+std_msgs/Header header
+uint8 lap_counter
+uint8 cones_count_actual
+uint16 cones_count_all

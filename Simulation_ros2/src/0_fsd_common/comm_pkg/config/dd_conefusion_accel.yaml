@@ -1,0 +1,8 @@
+# !! Parameter nicht aktuell
+# Conefusion parameters for accel "on sight"
+Q_gain_conefusion : 3.0         #variance value for the dynamics matrix
+R_gain_conefusion : 0.2         #variance value for the measurement matrix
+var_threshold_conefusion : 4.0  #variance threshold after which a cone gets deleted
+matching_distance_conefusion : 1.5
+# Plus additional track info
+angle_trackinfo : 0.35

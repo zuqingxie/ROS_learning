@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>cpp_parameters</name>
+  <version>0.0.0</version>
+  <description>TODO: learning the parameter in ROS2</description>
+  <maintainer email="zuqing.xie@greenteam-stuttgart.de">xiaochen</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+
+
+  <!--下面这一行可以没有,但是最好是加上....这个能确保所有的格式的launch都能被识别: Python XML 和 YAML-->
+  <exec_depend>ros2launch</exec_depend>
+  
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,6 @@
+std_msgs/Header header
+float32 pos_x
+float32 pos_y
+float32 pos_theta
+float32[] covariance
+bool from_localisation

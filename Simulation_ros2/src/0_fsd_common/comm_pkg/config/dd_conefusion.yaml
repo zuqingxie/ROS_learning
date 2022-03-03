@@ -1,0 +1,14 @@
+Q_gain_conefusion : 5.0         #variance value for the dynamics matrix
+R_gain_conefusion : 0.4         #variance value for the measurement matrix
+var_threshold_conefusion : 11.5  #variance threshold after which a cone gets deleted
+
+#
+activate_image_ml : false
+activate_image_mr : false
+
+matching_distance_lidar_conefusion : 1.1
+matching_distance_camera_conefusion : 0.6
+
+
+
+

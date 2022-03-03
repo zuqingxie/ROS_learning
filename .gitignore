@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+/ROS2/install
+/ROS2/build
+/ROS2/log
+/Simulation_ros2/install
+/Simulation_ros2/build
+/Simulation_ros2/log
+/ROS1/install
+/ROS1/build
+/ROS1/log
+/ROS1/devel
+
+
+
