@@ -1,0 +1,3 @@
+[submodule "src/comm_pkg"]
+	path = src/comm_pkg
+	url = https://git.fs-stuttgart.de/vehicle/as/comm_pkg.git

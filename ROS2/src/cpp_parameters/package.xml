@@ -13,8 +13,7 @@
 
 
   <!--下面这一行可以没有,但是最好是加上....这个能确保所有的格式的launch都能被识别: Python XML 和 YAML-->
-  <exec_depend>ros2launch</exec_depend>
-  
+   
   
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

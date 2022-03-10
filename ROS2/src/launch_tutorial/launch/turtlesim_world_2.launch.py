@@ -11,14 +11,13 @@ def generate_launch_description():
       get_package_share_directory('launch_tutorial'),
       'config',
       'turtlesim.yaml'
-      )
-
+   )
    return LaunchDescription([
       Node(
          package='turtlesim',
          executable='turtlesim_node',
          namespace='turtlesim2',
-         name='sim',
+         name='sim', 
          parameters=[config]
       )
    ])
