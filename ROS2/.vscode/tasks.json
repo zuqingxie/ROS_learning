@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "colcon",
+			"args": [
+				"build",
+				"--merge-install",
+				"--symlink-install",
+				// "--event-handlers",
+				// "console_cohesion+",
+				// "--base-paths",
+				// "/home/xiaochen/ROS_learning/ROS2",
+				"--cmake-args",
+				"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+			],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "colcon: build"
+		}
+	]
+}
+// {
+// 	"label": "build",
+// 	"detail": "Build workspace",
+// 	"type": "shell",
+// 	"command": "colcon build --symlink-install --cmake-args '-DCMAKE_BUILD_TYPE=RelWithDebInfo' '-DCMAKE_EXPORT_COMPILE_COMMANDS=On' -Wall -Wextra -Wpedantic",
+// 	"group": "build",
+// 	"problemMatcher": "$gcc"
+// },
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//         // Build tasks
+//         {
+//             "label": "colcon make",
+//             "detail": "Build workspace (default)",
+//             "type": "shell",
+//             "command": "colcon build --merge-install --cmake-args '-DCMAKE_BUILD_TYPE=RelWithDebInfo' -Wall -Wextra -Wpedantic",
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "problemMatcher": "$gcc"
+//         }
+//     ]
+// }
