@@ -1,5 +1,4 @@
 {
-    "colcon.provideTasks": true,
     "colcon.workspaceSetup": [
         "/opt/ros/foxy/setup.sh",
         "install/setup.sh"
@@ -82,5 +81,7 @@
         "variant": "cpp",
         "stdint.h": "c"
     },
-    "ros.distro": "foxy"
+    // colcon extention: enable the tasks for current workspace
+    "ros.distro": "foxy",
+    "colcon.provideTasks": true
 }
