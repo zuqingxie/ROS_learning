@@ -1,80 +1,14 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-            // 一个极为普通的cpp文件的debug
         {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
+            "name": "ROS: Launch",
+            "type": "ros",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description":  "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-            // 一个cpp ROS 节点的 调试 (搞定！！！！)
-        {
-            "name": "C++ Parameter_node",
-            "request": "launch",
-            "type": "cppdbg",
-            "cwd": "/",
-            "program": "${workspaceFolder}/build/cpp_parameters/parameter_node"
-        },
-            // a python launch file
-        {
-            "name": "Launch cpp",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/install/${input:package}/bringup/launch/cleaner_gazebo.py",
-            "console": "integratedTerminal",
-        },
-          // Example gdb launch of a cpp launch file
-        {
-            "name": "cpp_parameter launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/install/lib/${input:cpp_parameters}/${input:program}",
-            "args": [],
-            "stopAtEntry": true,
-            "cwd": "${workspaceFolder}",
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-              {
-                "description": "Enable pretty-printing for gdb",
-                "text": "-enable-pretty-printing",
-                "ignoreFailures": true
-              }
-            ]
-          }
-        ],
-    "inputs": [
-        {
-        "id": "cpp_parameters",
-        "type": "promptString",
-        "description": "Package name",
-        "default": "learning_ros2"
-        },
-        {
-        "id": "program",
-        "type": "promptString",
-        "description": "Program name",
-        "default": "ros2_talker"
+            "target": "/home/zuqing/ROS_learning/ROS2/install/share/cpp_parameters/launch/cpp_parameters_launch.py"
         }
 
     ]
