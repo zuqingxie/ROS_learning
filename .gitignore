@@ -34,6 +34,11 @@
 /ROS2/install
 /ROS2/build
 /ROS2/log
+/ROS2/.vscode/browse.vc.db
+/ROS2/.vscode/browse.vc.db-shm
+/ROS2/.vscode/browse.vc.db-wal
+/ROS2/.vscode/colcon.env
+
 /Simulation_ros2/install
 /Simulation_ros2/build
 /Simulation_ros2/log
