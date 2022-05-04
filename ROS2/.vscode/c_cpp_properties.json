@@ -8,7 +8,8 @@
             "includePath": [
                 "/opt/ros/foxy/include/**",
                 "/usr/include/**",
-                "${workspaceFolder}/build/tutorial_interfaces/rosidl_generator_cpp"
+                "${workspaceFolder}/build/tutorial_interfaces/rosidl_generator_cpp",
+                "${workspaceFolder}/src/action_tutorials_cpp/include"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
