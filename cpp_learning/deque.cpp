@@ -2,7 +2,7 @@
 
 
 
-#if 0
+#if 1
 // deque的优点，可以很轻松的在array前面添加数据。比Vector快很多。
 //  原因是deque double end queue 它是由很多一样长度的array首位链接在一块
 #include <deque>
@@ -23,8 +23,8 @@ int main()
     deque<int> gquiz = { 7, 7, 7};
 
     cout<<"大小是： "<<gquiz.size()<<endl;
-    gquiz.push_back(10);  //放前，放后
-    gquiz.push_front(20);   
+    gquiz.push_back(10);  //放在对大index后面
+    gquiz.push_front(20);  //放在index（0）的地方，其他往后推 
     gquiz.push_back(30);
     gquiz.push_front(15);
     cout << "The deque gquiz is : ";
@@ -34,15 +34,16 @@ int main()
     cout << "\ngquiz.max_size() : " << gquiz.max_size();
  
     cout << "\ngquiz.at(2) : " << gquiz.at(2); // 取出第三个数据
-    cout << "\ngquiz.front() : " << gquiz.front(); // 取出最前面或者最后面对数据
-    cout << "\ngquiz.back() : " << gquiz.back();
+    cout << "\ngquiz.front() : " << gquiz.front(); // 取出index（0）的数据
+    cout << "\ngquiz.back() : " << gquiz.back();  // 取出index 最大的数据
  
     cout << "\ngquiz.pop_front() : ";
-    gquiz.pop_front();  //把最前面的删除
+    gquiz.pop_front();  //删除index（0） 的数据
     showdq(gquiz);
  
     cout << "\ngquiz.pop_back() : ";
-    gquiz.pop_back();   //把最后面的删除
+    gquiz.pop_back();   //把index最大的数据删除
+    
     showdq(gquiz);
 
     cout << "\ngquiz.clear() : ";
@@ -55,7 +56,7 @@ int main()
 }
 #endif
 
-#if 1
+#if 0
 
 // deque 的删除和打印
 #include <iostream>

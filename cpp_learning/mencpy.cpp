@@ -33,7 +33,7 @@ int main()
     ps->print();
 }
 #endif
-#if 1
+#if 0
 #include <iostream>
 #include <cstdint>
 #include <cstring>
@@ -42,24 +42,111 @@ int main()
 using namespace std;
 int main()
 {
-    std::deque<float> ap ={1.0, 2.0, 3.0};
-    float ak[3]={1.0, 2.0, 3.0};
-    float velocity_now[3];
+    // std::deque<float> ap ={1.0, 2.0, 3.0};
+    float velocity_send[3]={0,1,2};
+    float velocity_copy[3];
+    // array 的长度的表达：
+    // int len = sizeof(arr) / sizeof(arr[0]);
+    int len = sizeof(velocity_send)/sizeof(velocity_send[0]);
+    cout<<"size of velocity_send ="<<len<<endl;
+    for (auto it = 0; it !=len; ++it){
+        velocity_copy[it] = velocity_send[it];
+        cout<<"velocity_copy("<<it<<"):"<<velocity_copy[it]<<endl;
 
-    for(auto it = ap.begin(); it!=ap.end(); ++it)
-    {
-
-        // it = it + 1; //走到下一个时间点
-
-        // float velocity_now[3];
-        // memcpy(velocity_now,(*it).velocity,3);
-        cout<<"*it is :"<<*it<<endl;
-        cout<<"ak[*it] is :"<<ak[int(*it)-1]<<endl;
-        // memccpy(velocity_now[int(*it-1)],ak[int(*it-1)]);
-        memcpy(velocity_now,(*it).ak,3);
-    
     }
+
+    
+    // }
 
 }
 
+#endif
+#if 0
+#include <iostream>
+#include <cstdint>
+#include <cstring>
+#include <deque>
+
+int main(){
+    char str1[] = "Geeks"; 
+  char str2[] = "Quiz"; 
+ 
+  puts("str1 before memcpy ");
+  puts(str1);
+ 
+  /* Copies contents of str2 to str1 */
+  memcpy (str1, str2, sizeof(str2));
+ 
+  puts("\nstr1 after memcpy ");
+  puts(str1);
+ 
+  return 0;
+
+
+}
+#endif
+#if 1
+#include <iostream>
+#include <deque>
+// #include "eigen3/Eigen/Dense"
+
+using namespace std;
+
+struct Traj
+{
+    /* data */
+    int num;
+    float arr[3];
+};
+
+
+int main(){
+    
+    std::deque<Traj> tra;
+    Traj a ={ 2, {1.0,2.2,3.0}};
+        Traj b ={ 5, {4.0,5.0,6.0}};
+        Traj c ={ 5, {4.0,5.0,6.0}};
+    tra.push_back(a);
+    tra.push_back(b);
+    tra.push_back(c);
+
+    // iterater 的使用方式
+    for(auto it = tra.begin(); it!=tra.end(); ++it){
+        int number = (*it).num;
+        cout<<"num = "<<number<<endl;
+        // it =it +1;
+        number = (*(it+1)).num;
+        cout<<"num second= "<<number<<endl;
+        // it = it -1;
+
+    }
+
+    // method 1
+    float arr_now[3];
+    int len =3;
+
+    for (auto i = 0; i !=len; ++i){
+        arr_now[i] = tra[0].arr[i];
+        cout<<"after copy:"<< arr_now[i]<<endl;
+    }
+    
+    // Eigen::VectorXf array_;
+    // array_(0)= 1.6989;
+    // cout<<"array is:"<<array_(0)<<endl;
+    // write into 
+    // float arr_write[3] ={1.0,1.0,1.0};
+    // float Traj:: arr_write[3];
+    // arr_write = {1.0,2.0,3.0};
+    // int len =3;
+    // tra[0].arr = arr_write;
+
+    // for (auto i = 0; i !=len; ++i){
+    //     arr_now[i] = tra[0].arr[i];
+    //     cout<<"after copy:"<< arr_now[i]<<endl;
+    // }
+
+
+
+
+}
 #endif
