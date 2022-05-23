@@ -10,7 +10,8 @@
                 "/opt/ros/noetic/include/**",
                 "/opt/ros/foxy/include/**",
                 "/usr/include/**",
-                "/usr/local/include/**"
+                "/usr/local/include/**",
+                "/home/greenteamsim/ROS_learning/ROS2/install/**"
             ],
             "name": "ROS",
             "intelliSenseMode": "linux-gcc-x64",
