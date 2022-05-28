@@ -1,0 +1,9 @@
+total 16
+drwxrwxr-x  3 greenteamsim greenteamsim 4096 May 28 19:33 .
+drwxrwxr-x 11 greenteamsim greenteamsim 4096 May 28 19:10 ..
+-rw-rw-r--  1 greenteamsim greenteamsim    0 May 28 19:44 output.txt
+drwxrwxr-x  2 greenteamsim greenteamsim 4096 May 28 19:11 __pycache__
+-rw-rw-r--  1 greenteamsim greenteamsim 1400 May 28 19:44 subprocess_learning.py
+output.txt
+__pycache__
+subprocess_learning.py
