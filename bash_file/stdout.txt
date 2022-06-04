@@ -1,0 +1,16 @@
+total 48
+drwxrwxr-x  2 zuqing zuqing 4096 Jun  4 12:26 .
+drwxrwxr-x 13 zuqing zuqing 4096 Jun  4 10:55 ..
+-rw-rw-r--  1 zuqing zuqing    0 Jun  4 11:55 =
+-rwxrwxr-x  1 zuqing zuqing  485 Jun  4 12:12 conditional.sh
+-rw-rw-r--  1 zuqing zuqing   67 Jun  4 11:47 file_add.txt
+-rw-rw-r--  1 zuqing zuqing   15 Jun  4 11:47 file.txt
+-rw-rw-r--  1 zuqing zuqing  226 Jun  4 12:16 input.sh
+-rwxrwxr-x  1 zuqing zuqing   78 Jun  4 11:38 ip.sh
+-rwxrwxr-x  1 zuqing zuqing  401 Jun  4 11:47 longComment.sh
+-rwxrwxr-x  1 zuqing zuqing  432 Jun  4 12:12 loop.sh
+-rw-rw-r--  1 zuqing zuqing  141 Jun  4 12:29 output.sh
+-rw-rw-r--  1 zuqing zuqing  126 Jun  4 12:22 read_file.sh
+-rw-rw-r--  1 zuqing zuqing    0 Jun  4 12:29 stderr.txt
+-rw-rw-r--  1 zuqing zuqing    0 Jun  4 12:29 stdout.txt
+-rwxrwxr-x  1 zuqing zuqing  237 Jun  4 11:41 store_in_file.sh
