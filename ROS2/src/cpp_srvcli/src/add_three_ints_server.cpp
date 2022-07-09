@@ -6,6 +6,8 @@
 void add(const std::shared_ptr<tutorial_interfaces::srv::AddThreeInts::Request> request,
           std::shared_ptr<tutorial_interfaces::srv::AddThreeInts::Response>      response)
 {
+  // sleep
+  std::this_thread::sleep_for(std::chrono::seconds(5));
   response->sum = request->a + request->b + request->c;
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: %ld" " b: %ld c: %ld",
                 request->a, request->b);
@@ -16,8 +18,10 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
 
+  //create a node
   std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("add_three_ints_server");
 
+  //define a service
   rclcpp::Service<tutorial_interfaces::srv::AddThreeInts>::SharedPtr service =
     node->create_service<tutorial_interfaces::srv::AddThreeInts>("add_three_ints", &add); // 回调函数 add
 

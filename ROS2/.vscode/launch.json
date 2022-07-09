@@ -6,10 +6,10 @@
     "configurations": [
         {
             "name": "ROS: Launch",
-            "type": "ros",
             "request": "launch",
-            "target": "/home/zuqing/ROS_learning/ROS2/install/share/cpp_parameters/launch/cpp_parameters_launch.py"
+            "target": "/home/greenteamsim/ROS_learning/ROS2/install/cpp_parameters/share/cpp_parameters/launch/cpp_parameters_launch.py",
+            "launch": "[rviz, gz, gzclient, gzserver]",
+            "type": "ros"
         }
-
     ]
 }
