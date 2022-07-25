@@ -1,0 +1,52 @@
+here we gona learn how to edit with vim. which is very import although we can use rsub to edit in sublime
+
+// open command
+vim +6 file_name.py // open and navigate the file in 6th line
+
+
+
+:set number //show the lines
+:syntax an // show the color for the code
+:q! // quit
+:w // save
+:wq! // write and quit
+//Move
+j //down
+k //up
+h //left
+l //right
+b // move forward a word
+0 // beginning of the line
+$ // end of the line 
+^ //beginning of the word in the line 
+gg // beginning  of the file
+5gg // go to line 5
+G // end of the file
+
+
+// mode change
+i // input
+Esc // command
+
+
+// Command mode
+o // enter a empty line below
+shift o // enter a empty line before
+shift + a //add at the end of the line
+dd //delete the line 
+p // paste
+4dd //delete 4lines
+dG //delete till the end
+
+// Searching
+/linux //search the linux
+n //next
+N //last
+:%s/linux/LINUX/gc  // replace the linux with LINUX globally and with confirm
+
+
+
+
+// Insert Mode 
+u // undo
+ctrl+r // do
