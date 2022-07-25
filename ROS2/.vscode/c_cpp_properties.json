@@ -6,10 +6,14 @@
                 "limitSymbolsToIncludedHeaders": false
             },
             "includePath": [
+                "/home/greenteamsim/ROS_learning/ROS2/install/tutorial_interfaces/include/**",
+                "/home/greenteamsim/ROS_learning/ROS2/install/more_interfaces/include/**",
+                "/home/greenteamsim/ROS_learning/ROS2/install/action_tutorials_interfaces/include/**",
                 "/opt/ros/foxy/include/**",
+                "/home/greenteamsim/ROS_learning/ROS2/src/action_tutorials_cpp/include/**",
+                "/home/greenteamsim/ROS_learning/ROS2/src/cpp_srvcli/include/**",
                 "/usr/include/**",
-                "${workspaceFolder}/build/tutorial_interfaces/rosidl_generator_cpp",
-                "${workspaceFolder}/src/action_tutorials_cpp/include"
+                "${workspaceFolder}/build/comm_pkg/rosidl_generator_cpp"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
