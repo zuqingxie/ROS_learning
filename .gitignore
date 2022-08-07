@@ -46,6 +46,9 @@
 /ROS1/build
 /ROS1/log
 /ROS1/devel
+/Ceres/.vscode/
+/.vscode/
+*/build/
 
 
 
