@@ -50,6 +50,7 @@
 /.vscode/
 /Ceres/.vscode
 /Ceres/*/build/
+/GTSAM/build/
 
 
 
