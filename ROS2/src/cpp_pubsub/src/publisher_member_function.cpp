@@ -14,7 +14,7 @@ public:
   {
     publisher_ = this->create_publisher<tutorial_interfaces::msg::Num>("topic", 10);    // CHANGE
     timer_ = this->create_wall_timer(
-      500ms, std::bind(&MinimalPublisher::timer_callback, this));
+      300ms, std::bind(&MinimalPublisher::timer_callback, this));
   }
 
 private:

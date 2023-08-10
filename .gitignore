@@ -51,6 +51,7 @@
 /Ceres/.vscode
 /Ceres/*/build/
 /GTSAM/build/
+**/my_bag/
 
 
 

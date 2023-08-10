@@ -7,6 +7,11 @@
 #include "std_msgs/msg/string.hpp"
 #include "tutorial_interfaces/msg/num.hpp"
 
+
+/*
+这个教程教我们如何使节点额外发布/statistics话题,来观测接受节点的频率和统计分布.可以用来很好得查看整个通信的质量
+主要用作检测和调试使用
+*/
 class MinimalSubscriberWithTopicStatistics : public rclcpp::Node
 {
 public:

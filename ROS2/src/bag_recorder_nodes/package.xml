@@ -1,16 +1,19 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>greenteem_testing</name>
+  <name>bag_recorder_nodes</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="zuqing.xie@greenteam-stuttgart.de">xiaochen</maintainer>
+  <description>C++ bag writing tutorial</description>
+  <maintainer email="xiz1ul@bosch.com">zuqing</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>example_interfaces</depend>
   <depend>rclcpp</depend>
-  <depend>tutorial_interfaces</depend>
-  <depend>comm_pkg</depend>
+  <depend>rosbag2_cpp</depend>
+  <depend>std_msgs</depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

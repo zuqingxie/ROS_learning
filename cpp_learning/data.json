@@ -1,0 +1,11 @@
+{
+	"age" : 30,
+	"height" : 1.75,
+	"hobbies" : 
+	[
+		"Reading",
+		"Swimming",
+		"Coding"
+	],
+	"name" : "Alice"
+}
