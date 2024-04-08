@@ -48,12 +48,13 @@
 /ROS1/log
 /ROS1/devel
 
-/.vscode/
+.vscode/
 /Ceres/.vscode
 /Ceres/*/build/
 /GTSAM/build/
 **/my_bag/
 
+cpp_learning/.vscode
 ./.idea/
 
 
