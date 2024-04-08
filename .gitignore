@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+*/__pycache__/
 
 /ROS2/install
 /ROS2/build
@@ -53,6 +54,6 @@
 /GTSAM/build/
 **/my_bag/
 
-
+./.idea/
 
 
