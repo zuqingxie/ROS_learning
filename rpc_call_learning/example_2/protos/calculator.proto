@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Number {
+  float value = 1;
+}
+service Calculator {
+    rpc SquareRoot(Number) returns (Number) {}
+}
+
+// run the command for two automatical generated files:
+// python -m grpc_tools.protoc -I<proto_folder> --python_out=. --pyi_out=. --grpc_python_out=. <xxx.proto_file_name>
+// python -m grpc_tools.protoc -Iprotos --python_out=. --pyi_out=. --grpc_python_out=. ./protos/calculator.proto
