@@ -16,6 +16,15 @@ int main()
     que_.push(2);
     que_.push(223);
     que_.push(8);
+    que_.push(88);
+    que_.push(855);
+    que_.push(8);
+    que_.push(82);
+    que_.push(8);
+    que_.push(834);
+    que_.push(8124);
+
+    cout<<"value in 5 is: "<<que_.back()<<endl;
 
     while(que_.size() > 0){
         cout<<"value is"<<que_.front()<<endl;

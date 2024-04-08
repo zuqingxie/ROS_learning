@@ -56,5 +56,6 @@
 
 cpp_learning/.vscode
 ./.idea/
+/cpp_learning/inference/build/
 
 
